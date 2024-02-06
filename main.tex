@@ -36,8 +36,10 @@ The metrics that are used in network weather maps include the availability of th
 
 To gain further insights into the network's performance, statistics are collected and analyzed over regular intervals. The statistics provide information about the usage of network nodes and routers, including peak events and possible anomalies. The aggregated statistics can help identify recurring trends and issues that might affect the network's overall performance. By analyzing the statistics, network administrators can proactively address any potential problems and ensure the network is running efficiently. 
 
-In the following section, some of the most common network issues will be mentioned and explained. 
 \subsection{BACKGROUND}
+In the following section, some of the most common network issues will be mentioned and explained. 
+
+
 \textbf{Congestion:} Network congestion is a widespread issue that can significantly reduce the quality and performance of a network. This problem usually occurs due to a network node that processes data beyond its capabilities. Congestion is often caused by insufficient bandwidth, poor network design, or node failures, which result in delays in processing packets, eventual packet loss, and a general decline in network performance \cite{simulation}.
 
 To address this problem, various methods have been developed to mitigate network congestion. One of the most commonly used methods is Random Early Detection (RED), which monitors the queue of the network node and discards packets before the queue becomes full \cite{10.1145/263105.263154}. Another method is flow monitoring, which monitors the flow of data in the network and identifies congested areas \cite{10.1145/3342280.3342305}. Moreover, there are several protocols and algorithms embedded in switches and routers that help in preventing network congestion. These protocols and algorithms include traffic shaping, Quality of Service (QoS) \cite{VanMieghem2003}, and Multiprotocol Label Switching (MPLS) \cite{Conte2003}, among others.
@@ -55,17 +57,17 @@ Many institutions deploy monitoring software on their networks to protect the in
 
 \textbf{Intrusion and anomaly detection:} The vast network of the internet generates an enormous amount of data, which is constantly being collected and analyzed to identify patterns and trends that deviate from the norm. Internet weather maps and statistics play a crucial role in providing a comprehensive view of network performance and traffic. 
 
-For instance, sudden spikes in traffic could indicate a bot attack on the network, while an increase in latency or packet loss could suggest a network congestion issue. To detect such anomalies, CDNs (Content Delivery Networks) rely on advanced techniques of graph theory and artificial intelligence \cite{6932930}.  CDNs can leverage these advanced techniques to model the network and detect any deviation from the normal traffic pattern. This enables them to identify and mitigate the impact of network attacks, such as DDoS (Distributed Denial of Service) attacks, before they cause any significant damage. Furthermore, CDNs can enhance network security by improving intrusion detection capabilities and anomaly detection techniques. By analyzing the network traffic in real time and comparing it to historical data, CDNs can identify suspicious activities and take proactive measures to prevent security breaches. 
+For instance, sudden spikes in traffic could indicate a bot attack on the network, while an increase in latency or packet loss could suggest a network congestion issue. To detect such anomalies, CDNs (Content Delivery Networks) rely on advanced techniques of graph theory and artificial intelligence \cite{6932930}.  CDNs can leverage these advanced techniques to model the network and detect any deviation from the normal traffic pattern. This enables them to identify and mitigate the impact of network attacks, such as DDoS (Distributed Denial of Service) attacks, before they cause any significant damage. Furthermore, CDNs can enhance network security by improving intrusion detection capabilities and anomaly detection techniques. By analyzing the network traffic in real-time and comparing it to historical data, CDNs can identify suspicious activities and take proactive measures to prevent security breaches. 
 
-\textbf{User experience:} In today's world, network providers have access to a vast amount of data about users' online behavior, which can be leveraged to make informed decisions and tailor content. By analyzing Internet weather maps and collecting large datasets about interactions and time spent on selected websites, providers can gain valuable insights into usage patterns and trends. For example, they can identify how users' internet usage changes during different seasons, such as winter or spring, and use this information to optimize resource allocation or enhance overall user satisfaction. This data-driven approach can also help providers offer personalized content and services that meet the specific needs and preferences of individual users.
+\textbf{User experience:} In today's world, network providers have access to a vast amount of data about users' online behavior, which can be leveraged to make informed decisions and tailor content \cite{2015}. By analyzing Internet weather maps and collecting large datasets about interactions and time spent on selected websites, providers can gain valuable insights into usage patterns and trends. For example, they can identify how users' internet usage changes during different seasons, such as winter or spring, and use this information to optimize resource allocation or enhance overall user satisfaction. This data-driven approach can also help providers offer personalized content and services that meet the specific needs and preferences of individual users.
 
-\textbf{Network management:} Internet weather maps and statistics are important tools for analyzing the performance of a network and maintaining its functionality. These tools help identify potential bottlenecks and network requirements that can be addressed promptly, such as predicting capacity bottlenecks and hardware failures. By analyzing internet weather maps and statistics, you can gain insights into network performance and use network resources efficiently, optimizing the user experience. This is particularly important for content delivery networks (CDNs), where timely content delivery is critical for business success. In essence, internet weather maps and statistics help businesses stay ahead of potential network issues and proactively take steps to maintain their networks, ensuring that customers receive the best possible experience when accessing their content.
+\textbf{Network management:} Internet weather maps and statistics are important tools for analyzing the performance of a network and maintaining its functionality. These tools help identify potential bottlenecks and network requirements that can be addressed promptly, such as predicting capacity bottlenecks and hardware failures. By analyzing internet weather maps and statistics, you can gain insights into network performance and use network resources efficiently, optimizing the user experience. This is particularly important for content delivery networks (CDNs), where timely content delivery is critical for business success. In essence, internet weather maps and statistics help businesses stay ahead of potential network issues and proactively take steps to maintain their networks, ensuring that customers receive the best possible experience when accessing their content \cite{1235600}.
 
 \textbf{Users' privacy:} One potential drawback of utilizing weather maps and statistics is the potential risk it poses to the privacy of users, particularly about their payload, IP, and MAC addresses. This risk is magnified if the collected datasets are intended to be used for research purposes. To address this issue, the datasets must be carefully cleaned and anonymized. Specifically, any payload data must be removed and the addresses must be scrambled in such a way that users cannot be identified. Achieving this requires significant manpower and resources to carry out the anonymization process effectively \cite{271335}.
 
 Overall, Internet weather maps and statistics mark a new era in network administration. They transform raw data into insightful information that leads to informed, smart, and knowledgeable actions.
 
-\section{Related works}
+\section{INTERNET WEATHER MAPS}
 This section will refer to several existing Internet weather maps and statistics and their research contributions.
 \begin{figure}[H]
     \centering
@@ -76,7 +78,7 @@ This section will refer to several existing Internet weather maps and statistics
 
 \subsection{MAWI} The Measurement and Analysis on the WIDE (AS2500) Internet (MAWI) Working Group is a collaborative effort by multiple network research and academic institutions based in Japan \cite{271335}. Its primary objective is to provide invaluable insights into the backbone infrastructure of Japan through network research. A topology map of the WIDE network is shown in Figure \ref{MAWI: WIDE Internet backbone topology 2023}.
 
-MAWI is one of the most reputable Internet weather maps and statistics sources, with its traffic archive serving as the basis of network research for several years. This archive has been in operation since 1999, except for a few minor interruptions. As a result, exhaustive research methodologies are applied, including longitudinal studies that involve repeated observations of the same variables over long periods of time.
+MAWI is one of the most reputable Internet weather maps and statistics sources, with its traffic archive serving as the basis of network research for several years. This archive has been in operation since 1999, except for a few minor interruptions. As a result, exhaustive research methodologies are applied, including longitudinal studies that involve repeated observations of the same variables over long periods.
 
 The set of tools and the data repository are open source, making them accessible to anyone interested in network research \cite{MAWIDataset}. Packet traces are collected using the network traffic monitoring software tcpdump \cite{tcpdump} and anonymized with a modified version of tcpdriv \cite{TCPDPRIV}. Network tracing starts every day from 14:00 to 14:15 Japanese Standard Time, with packet traces collected and made public on the data repository platform. The traces are highly aggregated, with each 15-minute trace containing approximately 300k-500k unique IP addresses \cite{5061979}.
 
@@ -109,7 +111,7 @@ When operating in IPv6 mode, link-local addresses, and site-local addresses are 
 
 By following these guidelines, data sets from the MAWI data repository can be used for research purposes without violating the privacy of users.
 
-In the MAWI guideline three different scrambling policies for consistency are suggested, where the guideline recommends the second option:
+In the MAWI guideline, three different scrambling policies for consistency are suggested, where the guideline recommends the second option:
 \begin{itemize}
     \item A TCP session in a single data set is mapped to the same address. 
     \item All occurrences of addresses in a data set are scrambled to a single address.
@@ -154,7 +156,7 @@ The second longitudinal analysis \cite{7878657} was conducted 14 years after the
 
 \begin{figure}
     \centering
-    \includegraphics[width=\linewidth]{OVH/ovh.png}
+    \includegraphics[width=0.8\linewidth]{OVH/ovh.png}
     \caption{OVH: Excerpt from the European backbone network}
     \label{OVH: Excerpt from the European backbone network}
 \end{figure}
